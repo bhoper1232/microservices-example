@@ -1,17 +1,4 @@
-package com.bhoper.inventory_service.dto;
+package com.bhoper.order_service.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class InventoryResponse {
-
-    private String skuCode;
-    private Boolean isInStock;
-
+public record InventoryResponse(String skuCode, boolean isInStock) {
 }
